@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактные данные</title>
+    <style>
+        .nav {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="main.html" target="_self"><img src="img/squashes.jpg" alt="главная" height="50px"></a></li>
+        <li><a href="main.html#about"><i>О магазине</i></a></li>
+        <li><a href="shop.html" target="_self">Выбор заготовок</a></li>
+        <li><a href="contacts.html" target="_self"><b>Контактные данные</b></a></li>
+        <li><a href="order.html" target="_self">Заказ</a></li>
+        <li><a href="https://lifehacker.ru/kak-solit-ogurcy/" target="_blank" class="ext">Как засолить огурцы самому</a></li>
+    </ul>
+
+    <h2>Контактные данные</h2>
+    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p><input type="hidden"  name="id" value="1234"></p>
+
+    <p><b>Имя</b> <input type="Text" name="last_name" size=20  value="Александр"></p>
+
+    <p><b>Фамилия</b> <input type="Text" name="last_name" size=20  value="Александрович"></p>
+
+    <p><b>Отчество</b><input type="Text" name="last_name" size=20  value="Александров"></p>
+
+    <p><b>Сколько вам лет?</b><input type="number" name="age" size=3 value="48"></p>
+
+    <p><b>Номер телефона</b><input type="tel" name="phone" size=14 value="8(800)555-35-35"></p>
+
+    <p><b>Из какого вы города?</b>
+        <p><input type="Radio" name="place" value="Moscow">Москва</p>
+        <p><input type="Radio" name="place" value="Saint-Petersburg" >Санкт-Петербург</p>
+        <p><input type="Radio" name="place" value="Kazan" checked>Казань</p>
+        <p><input type="Radio" name="place" value="Novgorod">Нижний Новгород</p>
+
+        Другой:<input type="Text" name="place_other" size=20  value="-">
+    </p>
+
+    <p><b>Как предпочитаете забирать заказы? </b>
+        <p><input type="Checkbox" name="order"  value="" checked>Самовывозом</p>
+        <p><input type="Checkbox"  name="order"  value="" checked>Курьером</p>
+        <p><input type="Checkbox" name="order" value="">В пункте выдачи</p>
+        Другое:<input type="Text" name="order" size=20  value="-"> 
+    </p>
+
+    <p> <b>Как узнали о нас?</b>
+        <select name="about us"> 
+            <OPTION value="соцсети">В социальных сетях</OPTION>
+            <OPTION value="знакомые">От знакомых</OPTION>
+            <OPTION value="реклама">Реклама на сайте</OPTION>
+        </select>
+    </p>
+
+    <p> Дополнительная информация:
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea" >Доп. информация</TEXTAREA>
+    </p>
+     <p>Дата заполнения: <input type="date" name="user_date"></p>
+    <p>Пароль: <input type="Password" name="password" size=20 value="qqqqqqqqq"></p>
+
+    
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+
+</form>
+</body>
+</html>

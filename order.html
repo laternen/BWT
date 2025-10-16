@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ</title>
+    <style>
+        .nav {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="nav">
+        <li><a href="main.html" target="_self"><img src="img/squashes.jpg" alt="главная" height="50px"></a></li>
+        <li><a href="main.html#about"><i>О магазине</i></a></li>
+        <li><a href="shop.html" target="_self">Выбор заготовок</a></li>
+        <li><a href="contacts.html" target="_self">Контактные данные</a></li>
+        <li><a href="order.html" target="_self"><b>Заказ</b></a></li>
+        <li><a href="https://lifehacker.ru/kak-solit-ogurcy/" target="_blank" class="ext">Как засолить огурцы самому</a></li>
+    </ul>
+
+    <h2>Заказ</h2>
+
+    <form action="https://www.yandex.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p><input type="hidden"  name="id" value="4"></p>
+
+    <p><b>Адрес</b> <input type="text" name="address" size=50 value="г. Москва, ул. Бориса Пастернака, д. 15, кв. 87"></p>
+
+    <p><b>Номер телефона</b><input type="tel" name="phone" size=14 value="8(999)777-66-55"></p>
+
+     <p><b>Выберите категории, из которых хотите заказать</b>
+        <p><input type="Checkbox" name="category"  value="" checked>Варенья</p>
+        <p><input type="Checkbox" name="category"  value="" checked>Соленья</p>
+        <p><input type="Checkbox" name="category"  value="" >Маринады</p>
+    </p>
+
+    <p><b>Введите названия товаров</b> <input type="text" name="product" size=20 value="Малиновое, вишневое"></p>
+
+    <p><b>Сколько банок хотите заказать?</b>
+        <input type="number" name="product" value="3">
+    </p>
+
+    <p><b>Способ оплаты</b>
+        <p><input type="Radio" name="payment" value="card" checked>Картой</p>
+        <p><input type="Radio" name="payment" value="sfp">СБП</p>
+        <p><input type="Radio" name="payment" value="cash">Наличными при получении</p>
+    </p>
+
+
+    <p> Комментарий к заказу:
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea">Доп. информация</TEXTAREA>
+    </p>
+    <p>Дата заказа: <input type="date" name="user_date" value="10/10/2025"></p>
+    <p>Пароль: <input type="Password" name="password" size=20 value="12345"></p>
+
+    
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+
+</form>
+
+</body>
+</html>
