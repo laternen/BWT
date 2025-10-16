@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Паспорт</title>
+
+    <style>
+        table {
+            margin-bottom: 20px;
+        }
+
+        .number {
+            transform: rotate(90deg);
+        }
+
+    </style>
 </head>
 <body>
     <ul>
@@ -11,5 +22,57 @@
         <li><a href="02.html">02</a></li>
         <li><a href="03.html">03</a></li>
     </ul>
+
+    
+    <table cellspacing="0" cellpadding="10" border="1" width="700pх">
+        <tr height="100px">
+            <td colspan="4" valign="center" align="center">РОССИЙСКАЯ ФЕДЕРАЦИЯ</td>
+        </tr>
+
+        <tr height="200px">
+            <td colspan="3" valign="top">Паспорт выдан: <span id="place">ГУ МВД России по г. Москве</span></td>
+            <td rowspan="4" align="center" width="50px"><div class="number">44444444</div></td>
+        </tr>
+
+        <tr height="200px">
+            <td colspan="2">Дата выдачи: <span id="date">10.10.2010</span></td>
+            <td>Код подразделения: <span id="code">123</span></td>
+        </tr>
+
+        <tr height="200px">
+            <td colspan="3" align="right">
+                <span id="my_code"><img src="img/signature.png" alt="подпись" height="70px"></span><br>Личная подпись
+            </td>
+        </tr>
+    </table>
+
+    
+    <table cellspacing="0" cellpadding="10" border="1" width="700pх">
+        <tr height="100px">
+            <td rowspan="5" align="center"><img src="img/me.jpg" alt="фото" width="250px"></td>
+            <td colspan="2">Фамилия: <span id="second_name">Останина</span></td>
+            <td rowspan="5" width="50px" align="center"><div class="number">44444444</div></td>
+        </tr>
+
+        <tr height="100px">
+            <td colspan="2">Имя: <span id="name">Валерия</span></td>
+        </tr>
+
+        <tr height="100px">
+            <td colspan="2">Отчество: <span id="surname">Денисовна</span></td>
+        </tr>
+
+        <tr height="100px">
+            <td>Пол: <span id="gender">Жен.</span></td>
+            <td>Дата рождения: <span id="birth_date">11.11.2001</span></td>
+        </tr>
+
+        <tr height="100px">
+            <td colspan="2">Место рождения: <span id="hometown">гор. Тверь</span></td>
+        </tr>
+    </table>
+    <button align="center" id="button_latin">Изменить на латиницу</button>
+
+    <script src="passport.js"></script>
 </body>
 </html>
